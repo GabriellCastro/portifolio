@@ -1,5 +1,7 @@
 export const colors = {
-  black: '#161414',
-  blackButton: '#2C2C2C',
-  gray: 'D9D9D9',
+  gray: {
+    "900": "#161414",
+    "500": "#2C2C2C",
+    "300": "#D9D9D9",
+  },
 };

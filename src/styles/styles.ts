@@ -1,8 +1,8 @@
 export const styles = {
   global: {
     body: {
-      bg: "black",
-      color: "gray",
+      bg: "gray.900",
+      color: "gray.300",
       overflowX: "hidden",
     },
     html: {
