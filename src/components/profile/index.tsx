@@ -13,7 +13,7 @@ export const Profile: FC = () => {
           marginBottom="12px"
         />
         <Text marginBottom="32px" fontSize="1.5rem">
-          Hey there, {`I'm Gabriel`}
+          Hey there, {`I'm Gabriel`} 🧑🏻‍💻
         </Text>
       </Flex>
     </Box>
