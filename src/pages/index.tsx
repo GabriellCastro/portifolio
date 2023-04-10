@@ -5,14 +5,7 @@ import { SocialButton } from "~/components/socialButton";
 
 const Home: NextPage = () => {
   return (
-    <Container
-      maxW="1400px"
-      px="6"
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      minH="100vh"
-    >
+    <Container maxW="container.xl" centerContent>
       <Profile />
       <SocialButton />
     </Container>
