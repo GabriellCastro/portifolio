@@ -5,7 +5,7 @@ import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
 export const Profile: FC = () => {
   return (
     <Box mt="16" mb="16">
-      <Flex direction="row" alignItems="center">
+      <Flex direction={{ base: "column", md: "row" }} alignItems="center">
         <Box borderRadius="full" boxShadow="0 0 0 3px #fff, 0 0 0 6px #FFE071">
           <Avatar
             name="Gabriel"
@@ -15,13 +15,18 @@ export const Profile: FC = () => {
           />
         </Box>
         <Flex direction="column">
-          <Text fontSize="1.5rem" ml="8" fontWeight="semibold">
+          <Text
+            fontSize="1.5rem"
+            ml="8"
+            fontWeight="semibold"
+            mt={{ base: "6", md: "0" }}
+          >
             Gabriel Castro 🧑🏻‍💻
           </Text>
           <Text fontSize="1rem" ml="8" color="gray.400">
             Full-Stack Developer
           </Text>
-          <Flex direction="row" mt="3" ml="8" gap={4}>
+          <Flex direction="row" mt="3" ml="8" gap={8}>
             <FiGithub
               fontSize="24px"
               onClick={() =>
@@ -37,6 +42,21 @@ export const Profile: FC = () => {
                   "https://www.linkedin.com/in/eugabrielcastro/",
                   "_blank"
                 )
+              }
+            />
+            <FiTwitter
+              fontSize="24px"
+              cursor="pointer"
+              onClick={() =>
+                window.open("https://twitter.com/gabriellcastro_", "_blank")
+              }
+            />
+
+            <FiInstagram
+              fontSize="24px"
+              cursor="pointer"
+              onClick={() =>
+                window.open("https://www.instagram.com/urlgabriel/", "_blank")
               }
             />
           </Flex>
