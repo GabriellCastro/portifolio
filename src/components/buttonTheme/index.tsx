@@ -21,8 +21,11 @@ export const ButtonTheme: FC = () => {
   ];
 
   return (
-    <Box>
-      <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+    <Box w={{ base: "90%", md: "50%" }}>
+      <Grid
+        templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+        gap={6}
+      >
         {buttons.map(({ name, bg_color, color_text, icon, link }) => (
           <Button
             key={name}
