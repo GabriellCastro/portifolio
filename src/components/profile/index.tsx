@@ -4,7 +4,7 @@ import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 export const Profile: FC = () => {
   return (
-    <Box mt="16" mb="16">
+    <Box mt="16" mb="10">
       <Flex direction={{ base: "column", md: "row" }} alignItems="center">
         <Box borderRadius="full" boxShadow="0 0 0 3px #fff, 0 0 0 6px #FFE071">
           <Avatar
