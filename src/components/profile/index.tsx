@@ -33,7 +33,6 @@ export const Profile: FC = () => {
                 window.open("https://github.com/gabriellcastro", "_blank")
               }
               cursor="pointer"
-              _hover={{ color: "gray.400" }}
             />
             <FiLinkedin
               fontSize="24px"
