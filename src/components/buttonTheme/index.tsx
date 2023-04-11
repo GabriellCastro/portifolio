@@ -6,14 +6,14 @@ export const ButtonTheme: FC = () => {
   const buttons = [
     {
       name: "Download CV",
-      link: "https://www.google.com",
+      link: "https://drive.google.com/file/d/1utA44Xj_HHR79LIMfh9ANo6SUVAgZW-4/view?usp=sharing",
       icon: <FiDownload />,
       color_text: "black",
       bg_color: "yellow.400",
     },
     {
       name: "Contact Me",
-      link: "https://www.google.com",
+      link: "https://www.linkedin.com/in/eugabrielcastro/",
       icon: null,
       color_text: "gray.400",
       bg_color: "blue.800",
@@ -40,7 +40,7 @@ export const ButtonTheme: FC = () => {
             bg={bg_color}
             w="100%"
             h="50px"
-            rightIcon={icon ? icon : (null as any)}
+            rightIcon={icon ? icon : <></>}
             as="a"
             href={link}
             target="_blank"

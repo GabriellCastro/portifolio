@@ -27,38 +27,77 @@ export const Profile: FC = () => {
             Full-Stack Developer
           </Text>
           <Flex direction="row" mt="3" ml="8" gap={8}>
-            <FiGithub
-              fontSize="24px"
-              onClick={() =>
-                window.open("https://github.com/gabriellcastro", "_blank")
-              }
-              cursor="pointer"
-            />
-            <FiLinkedin
-              fontSize="24px"
-              cursor="pointer"
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/eugabrielcastro/",
-                  "_blank"
-                )
-              }
-            />
-            <FiTwitter
-              fontSize="24px"
-              cursor="pointer"
-              onClick={() =>
-                window.open("https://twitter.com/gabriellcastro_", "_blank")
-              }
-            />
-
-            <FiInstagram
-              fontSize="24px"
-              cursor="pointer"
-              onClick={() =>
-                window.open("https://www.instagram.com/urlgabriel/", "_blank")
-              }
-            />
+            <Box
+              borderBottom="2px solid transparent"
+              borderRadius={5}
+              padding={1}
+              _hover={{
+                transitionDelay: "0.1s",
+                borderColor: "yellow.400",
+              }}
+            >
+              <FiGithub
+                fontSize="24px"
+                onClick={() =>
+                  window.open("https://github.com/gabriellcastro", "_blank")
+                }
+                cursor="pointer"
+              />
+            </Box>
+            <Box
+              borderBottom="2px solid transparent"
+              borderRadius={5}
+              padding={1}
+              _hover={{
+                transitionDelay: "0.1s",
+                borderColor: "yellow.400",
+              }}
+            >
+              <FiLinkedin
+                fontSize="24px"
+                cursor="pointer"
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/eugabrielcastro/",
+                    "_blank"
+                  )
+                }
+              />
+            </Box>
+            <Box
+              borderBottom="2px solid transparent"
+              borderRadius={5}
+              padding={1}
+              _hover={{
+                transitionDelay: "0.1s",
+                borderColor: "yellow.400",
+              }}
+            >
+              <FiTwitter
+                fontSize="24px"
+                cursor="pointer"
+                onClick={() =>
+                  window.open("https://twitter.com/gabriellcastro_", "_blank")
+                }
+              />
+            </Box>
+            <Box
+              borderBottom="2px solid transparent"
+              borderRadius={5}
+              padding={1}
+              _hover={{
+                transitionDelay: "0.1s",
+                borderColor: "yellow.400",
+              }}
+            >
+              <FiInstagram
+                fontSize="24px"
+                cursor="pointer"
+                onClick={() =>
+                  window.open("https://www.instagram.com/urlgabriel/", "_blank")
+                }
+              />
+            </Box>
           </Flex>
         </Flex>
       </Flex>
