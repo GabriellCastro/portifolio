@@ -4,7 +4,7 @@ import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 export const Profile: FC = () => {
   return (
-    <Box mt="16" mb="10">
+    <Box mb="10">
       <Flex direction={{ base: "column", md: "row" }} alignItems="center">
         <Box borderRadius="full" boxShadow="0 0 0 3px #fff, 0 0 0 6px #FFE071">
           <Avatar
@@ -33,6 +33,7 @@ export const Profile: FC = () => {
                 window.open("https://github.com/gabriellcastro", "_blank")
               }
               cursor="pointer"
+              _hover={{ color: "gray.400" }}
             />
             <FiLinkedin
               fontSize="24px"
